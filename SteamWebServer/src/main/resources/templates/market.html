@@ -1,0 +1,661 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Steam社区市场</title>
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<link rel="stylesheet" type="text/css"
+  href="bootstrap3/css/bootstrap.css">
+<link rel="stylesheet" type="text/css"
+  href="bootstrap3/font-awesome-4.7.0/css/font-awesome.css" />
+<link rel="stylesheet" type="text/css" href="css/fdf-style.css">
+<link rel="stylesheet" href="css/home.css">
+<link rel="stylesheet" href="css/market.css">
+
+</head>
+<body>
+<header>
+  <nav class="navbar navbar-default fdf-daohang"><!--导航条-->
+    <div class="container fdf-moren">
+      <div class="container fdf-moren">
+        <div class="col-xs-2">
+          <div class="navbar-header fdf-header">
+            <!--logo部分-->
+            <a class="navbar-brand" href="./index.html">
+              <img alt="" src="images/fdf/logo.png">
+            </a>
+          </div>
+        </div>
+        <div class="col-xs-10 fdf-moren-3">
+          <div class="navbar-header fdf-caidan">
+            <!--菜单栏-->
+            <ul class="nav navbar-nav" id="fdf-caidanbianhua">
+              <li><a href="./index.html"><span>主页</span></a></li>
+              <li><a href="market.html"><span>市场</span></a></li>
+              <li><a href="社区论坛.html"><span>社区</span></a></li>
+              <li><a href="news.html"><span>新闻</span></a></li>
+              <li style="width: 275px;height: 50px"><!--搜索框-->
+                <form class="navbar-form navbar-left" method="get" action="search2.html">
+                  <div class="form-group">
+                    <input type="text" class="form-control fdf-formbackground-color" placeholder="游戏名..." style="color: #2a6496">
+                  </div>
+                  <button type="submit" class="btn btn-default fa fa-search" id="fdf-formbackground-color1"></button>
+                </form></li>
+              <li><!--用户登录-->
+                <ul class="nav navbar-nav" id="fdf-caidanbianhua-1">
+                  <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+                       aria-expanded="false">个人
+                      <span class="caret"></span></a>
+                    <ul class="dropdown-menu" id="fdf-xialacaidan">
+                      <li><a>未登录</a></li>
+                      <li><a href="登录.html">登录</a></li>
+                      <li><a href="index.html">注销</a></li>
+                      <li><a href="注册.html">注册</a></li>
+                    </ul>
+                  </li>
+                  </li>
+                </ul></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+</header>
+  <section>
+
+    <div class="market_header_bg">
+      <div id="BG_top">
+        <h1 class="market_header">
+          <div class="market_header_text">
+            <span class="market_title_text">社区市场</span>
+            <br>
+            <span
+              class="market_subtitle_text">用 Steam
+              钱包资金与社区成员进行物品买卖。</span>
+          </div>
+        </h1>
+      </div>
+    </div>
+    
+    <div class="row" id="myMarketTabs" style="width: 1048px; margin: 0 auto">
+      <br>
+      <br>
+      <div class="col-xs-8 ">
+        <ul class="nav nav-pills market_tab_well_tabs"
+          id="market_table_header">
+
+          <li role="presentation" class="active" id="market_table_li"><a
+            href="#"> 我的上架物品 ( 0 ) </a></li>
+          <li role="presentation"><a href="#">我的市场历史记录</a></li>
+          <li role="presentation" id="sale_of_goods"><a href="#">出售物品</a></li>
+
+        </ul>
+
+        <div id="mainContents">
+
+          <div class="market_listing_table">
+
+            <div>
+              <a href="#" class="a_color">登录</a>以查看、编辑或移除您的社区市场物品。
+            </div>
+
+          </div>
+
+          <div id="sideBar">
+            <div class="row">
+              <div class="col-md-8 " id="content">
+                <ul class="nav nav-pills market_tab_well_tabs"
+                  id="market_table_header">
+
+                  <li role="presentation" class="active"
+                    id="market_table_li"><a href="#"> 热门物品 </a></li>
+                  <li role="presentation"><a href="#"> 已上架 </a></li>
+                  <li role="presentation"><a href="#"> 已售出</a></li>
+
+                </ul>
+
+
+
+
+                <div class="row" id="market_table_tag">
+                  <div class="col-md-8">名称</div>
+                  <div class="col-md-2" id="market_table_tag2">数量</div>
+                  <div class="col-md-2" id="market_table_tag2">价格</div>
+
+                </div>
+
+
+
+                <a href="#" class="list-group-item"
+                  id="market_table_content">
+                  <div class="row" id="row_change">
+                    <div class="col-md-8">
+                      <img src="images/qwt/market.jpg"
+                        class="market_image">
+                      <div class="market_listing_item_name_block">
+                        <span class="market_listing_item_name">棱彩武器箱</span><br>
+                        <span class="text_color">Counter-Strike:
+                          Global Offensive</span>
+                      </div>
+                    </div>
+                    <div class="col-md-2">
+                      <div class="market_listing_item_name_block">
+                      <div class="market_listing_item_name_block_number">
+                        <span class="number">190,190</span>
+                      </div>
+                      </div>
+                    </div>
+                    <div class="col-md-2">
+                      <div class="market_listing_item_name_block">
+                      <div class="market_listing_item_name_block_sal">
+                        <span class="text_color">&nbsp &nbsp  起价:</span><br> <span
+                          class="sal">$0.36 USD</span>
+                          
+                      </div>
+                      </div>
+                    </div>
+                   </div>
+                </a>
+                
+                <!-- 2 -->
+                <a href="#" class="list-group-item"
+                  id="market_table_content">
+                  <div class="row" id="row_change">
+                    <div class="col-md-8">
+                      <img src="images/qwt/market.jpg"
+                        class="market_image">
+                      <div class="market_listing_item_name_block">
+                        <span class="market_listing_item_name">地平线武器箱钥匙</span><br>
+                        <span class="text_color">Counter-Strike:
+                          Global Offensive</span>
+                      </div>
+                    </div>
+                    <div class="col-md-2">
+                      <div class="market_listing_item_name_block">
+                      <div class="market_listing_item_name_block_number">
+                        <span class="number">1,275</span>
+                      </div>
+                      </div>
+                    </div>
+                    <div class="col-md-2">
+                      <div class="market_listing_item_name_block">
+                      <div class="market_listing_item_name_block_sal">
+                        <span class="text_color">&nbsp &nbsp  起价:</span><br> <span
+                          class="sal">$2.77 USD</span>
+                          
+                      </div>
+                      </div>
+                    </div>
+                   </div>
+                </a>
+                
+                <!-- 3 -->
+                <a href="#" class="list-group-item"
+                  id="market_table_content">
+                  <div class="row" id="row_change">
+                    <div class="col-md-8">
+                      <img src="images/qwt/market.jpg"
+                        class="market_image">
+                      <div class="market_listing_item_name_block">
+                        <span class="market_listing_item_name">"头号特训"武器箱</span><br>
+                        <span class="text_color">Counter-Strike:
+                          Global Offensive</span>
+                      </div>
+                    </div>
+                    <div class="col-md-2">
+                      <div class="market_listing_item_name_block">
+                      <div class="market_listing_item_name_block_number">
+                        <span class="number">187,808</span>
+                      </div>
+                      </div>
+                    </div>
+                    <div class="col-md-2">
+                      <div class="market_listing_item_name_block">
+                      <div class="market_listing_item_name_block_sal">
+                        <span class="text_color">&nbsp &nbsp  起价:</span><br> <span
+                          class="sal">$0.21 USD</span>
+                          
+                      </div>
+                      </div>
+                    </div>
+                   </div>
+                </a>
+                
+                <!-- 4 -->
+                <a href="#" class="list-group-item"
+                  id="market_table_content">
+                  <div class="row" id="row_change">
+                    <div class="col-md-8">
+                      <img src="images/qwt/market.jpg"
+                        class="market_image">
+                      <div class="market_listing_item_name_block">
+                        <span class="market_listing_item_name">手套武器箱</span><br>
+                        <span class="text_color">Counter-Strike:
+                          Global Offensive</span>
+                      </div>
+                    </div>
+                    <div class="col-md-2">
+                      <div class="market_listing_item_name_block">
+                      <div class="market_listing_item_name_block_number">
+                        <span class="number">290,717</span>
+                      </div>
+                      </div>
+                    </div>
+                    <div class="col-md-2">
+                      <div class="market_listing_item_name_block">
+                      <div class="market_listing_item_name_block_sal">
+                        <span class="text_color">&nbsp &nbsp  起价:</span><br> <span
+                          class="sal">$0.13 USD</span>
+                          
+                      </div>
+                      </div>
+                    </div>
+                   </div>
+                </a>
+                
+                <!-- 5 -->
+                <a href="#" class="list-group-item"
+                  id="market_table_content">
+                  <div class="row" id="row_change">
+                    <div class="col-md-8">
+                      <img src="images/qwt/market.jpg"
+                        class="market_image">
+                      <div class="market_listing_item_name_block">
+                        <span class="market_listing_item_name">命悬一线武器箱</span><br>
+                        <span class="text_color">Counter-Strike:
+                          Global Offensive</span>
+                      </div>
+                    </div>
+                    <div class="col-md-2">
+                      <div class="market_listing_item_name_block">
+                      <div class="market_listing_item_name_block_number">
+                        <span class="number">335,640</span>
+                      </div>
+                      </div>
+                    </div>
+                    <div class="col-md-2">
+                      <div class="market_listing_item_name_block">
+                      <div class="market_listing_item_name_block_sal">
+                        <span class="text_color">&nbsp &nbsp  起价:</span><br> <span
+                          class="sal">$0.11 USD</span>
+                          
+                      </div>
+                      </div>
+                    </div>
+                   </div>
+                </a>
+                
+                <!-- 6 -->
+                <a href="#" class="list-group-item"
+                  id="market_table_content">
+                  <div class="row" id="row_change">
+                    <div class="col-md-8">
+                      <img src="images/qwt/market.jpg"
+                        class="market_image">
+                      <div class="market_listing_item_name_block">
+                        <span class="market_listing_item_name">卡托维兹2019核子危机纪念包</span><br>
+                        <span class="text_color">Counter-Strike:
+                          Global Offensive</span>
+                      </div>
+                    </div>
+                    <div class="col-md-2">
+                      <div class="market_listing_item_name_block">
+                      <div class="market_listing_item_name_block_number">
+                        <span class="number">1,246</span>
+                      </div>
+                      </div>
+                    </div>
+                    <div class="col-md-2">
+                      <div class="market_listing_item_name_block">
+                      <div class="market_listing_item_name_block_sal">
+                        <span class="text_color">&nbsp &nbsp  起价:</span><br> <span
+                          class="sal">$4.63 USD</span>
+                          
+                      </div>
+                      </div>
+                    </div>
+                   </div>
+                </a>
+                
+                <!-- 7 -->
+                <a href="#" class="list-group-item"
+                  id="market_table_content">
+                  <div class="row" id="row_change">
+                    <div class="col-md-8">
+                      <img src="images/qwt/market.jpg"
+                        class="market_image">
+                      <div class="market_listing_item_name_block">
+                        <span class="market_listing_item_name">突围大行动武器箱</span><br>
+                        <span class="text_color">Counter-Strike:
+                          Global Offensive</span>
+                      </div>
+                    </div>
+                    <div class="col-md-2">
+                      <div class="market_listing_item_name_block">
+                      <div class="market_listing_item_name_block_number">
+                        <span class="number">131,315</span>
+                      </div>
+                      </div>
+                    </div>
+                    <div class="col-md-2">
+                      <div class="market_listing_item_name_block">
+                      <div class="market_listing_item_name_block_sal">
+                        <span class="text_color">&nbsp &nbsp  起价:</span><br> <span
+                          class="sal">$0.41 USD</span>
+                          
+                      </div>
+                      </div>
+                    </div>
+                   </div>
+                </a>
+                
+                <!-- 8 -->
+                <a href="#" class="list-group-item"
+                  id="market_table_content">
+                  <div class="row" id="row_change">
+                    <div class="col-md-8">
+                      <img src="images/qwt/market.jpg"
+                        class="market_image">
+                      <div class="market_listing_item_name_block">
+                        <span class="market_listing_item_name">曼恩公司供应箱钥匙</span><br>
+                        <span class="text_color">Counter-Strike:
+                          Global Offensive</span>
+                      </div>
+                    </div>
+                    <div class="col-md-2">
+                      <div class="market_listing_item_name_block">
+                      <div class="market_listing_item_name_block_number">
+                        <span class="number">4,386</span>
+                      </div>
+                      </div>
+                    </div>
+                    <div class="col-md-2">
+                      <div class="market_listing_item_name_block">
+                      <div class="market_listing_item_name_block_sal">
+                        <span class="text_color">&nbsp &nbsp  起价:</span><br> <span
+                          class="sal">$2.35 USD</span>
+                          
+                      </div>
+                      </div>
+                    </div>
+                   </div>
+                </a>
+                
+                <!-- 9 -->
+                <a href="#" class="list-group-item"
+                  id="market_table_content">
+                  <div class="row" id="row_change">
+                    <div class="col-md-8">
+                      <img src="images/qwt/market.jpg"
+                        class="market_image">
+                      <div class="market_listing_item_name_block">
+                        <span class="market_listing_item_name">"凤凰大行动"武器箱</span><br>
+                        <span class="text_color">Counter-Strike:
+                          Global Offensive</span>
+                      </div>
+                    </div>
+                    <div class="col-md-2">
+                      <div class="market_listing_item_name_block">
+                      <div class="market_listing_item_name_block_number">
+                        <span class="number">92,548</span>
+                      </div>
+                      </div>
+                    </div>
+                    <div class="col-md-2">
+                      <div class="market_listing_item_name_block">
+                      <div class="market_listing_item_name_block_sal">
+                        <span class="text_color">&nbsp &nbsp  起价:</span><br> <span
+                          class="sal">$0.35 USD</span>
+                          
+                      </div>
+                      </div>
+                    </div>
+                   </div>
+                </a>
+                
+                <!-- 10 -->
+                <a href="#" class="list-group-item"
+                  id="market_table_content">
+                  <div class="row" id="row_change">
+                    <div class="col-md-8">
+                      <img src="images/qwt/market.jpg"
+                        class="market_image">
+                      <div class="market_listing_item_name_block">
+                        <span class="market_listing_item_name">"头号特训"武器箱钥匙</span><br>
+                        <span class="text_color">Counter-Strike:
+                          Global Offensive</span>
+                      </div>
+                    </div>
+                    <div class="col-md-2">
+                      <div class="market_listing_item_name_block">
+                      <div class="market_listing_item_name_block_number">
+                        <span class="number">2,764</span>
+                      </div>
+                      </div>
+                    </div>
+                    <div class="col-md-2">
+                      <div class="market_listing_item_name_block">
+                      <div class="market_listing_item_name_block_sal">
+                        <span class="text_color">&nbsp &nbsp  起价:</span><br> <span
+                          class="sal">$2.68 USD</span>
+                          
+                      </div>
+                      </div>
+                    </div>
+                   </div>
+                </a>
+                <div  class="market_listing_table_showmore">
+                  <a class="btnv6_blue_hoverfade btn_medium" href="#">
+                    <span class="popularItemsMore">查看全部</span>
+                  </a>
+                
+                </div>
+              </div>
+              <div class="col-md-4 ">
+                <div class="market_search_sidebar_contents">
+                  <div>
+                    <span class="escrow_description_link">
+                                                                                   了解使用社区市场的<a href="#" class="a_color"> 安全需求</a>
+                    </span>
+                  </div>
+                  <span class="market_search_sidebar_section_tip_small">
+                                                                       搜索物品          
+                  </span>
+                  <div class="market_search_box_container"></div>
+                  <form id="market_search">
+                    <span>
+                    <input type="text" id="findItemsSearchBox" placeholder="搜索" autocomplete="off" tabindex="1">
+                    </span>
+                  </form>
+                  
+                  <div>
+                    <div id="market_search_advanced_show">
+                      <div class="market_search_advanced_button">
+                          <span>显示高级选项...</span>
+                      </div>
+                    </div>
+                  </div>
+                  
+                  <div>
+                    <div class="market_search_game_button_group">
+                      <span class="market_search_sidebar_section_tip_small">
+                                                                                按游戏浏览               </span>
+                    </div>
+                  
+                  </div>
+                  <!-- 1 -->
+                  <a href="#" class="game_button">
+                    <span class="game_button_contents">
+                      <span class="game_button_game_icon">
+                        <img  src="images/qwt/69f7ebe2735c366c65c0b33dae00e12dc40edbe4.jpg">
+                      </span>
+                      <span class="game_button_game_name">
+                        Counter-Strike: Global Offensive    
+                      </span>
+                    </span>
+                  </a>
+                  <!-- 2 -->
+                  <a href="#" class="game_button">
+                    <span class="game_button_contents">
+                      <span class="game_button_game_icon">
+                        <img  src="images/qwt/0bbb630d63262dd66d2fdd0f7d37e8661a410075.jpg">
+                      </span>
+                      <span class="game_button_game_name">
+                        Dota2 
+                      </span>
+                    </span>
+                  </a>
+                  <!-- 3 -->
+                  <a href="#" class="game_button">
+                    <span class="game_button_contents">
+                      <span class="game_button_game_icon">
+                        <img  src="images/qwt/15837cefb378766e9916548f8591b6eb490b9e52.jpg">
+                      </span>
+                      <span class="game_button_game_name">
+                        Killing Floor2
+                      </span>
+                    </span>
+                  </a>
+                  <!-- 4 -->
+                  <a href="#" class="game_button">
+                    <span class="game_button_contents">
+                      <span class="game_button_game_icon">
+                        <img  src="images/qwt/2947d156a2633c9a5c092d2a14890bc56a342b70.jpg">
+                      </span>
+                      <span class="game_button_game_name">
+                        KurtzPel
+                      </span>
+                    </span>
+                  </a>
+                  <!-- 5 -->
+                  <a href="#" class="game_button">
+                    <span class="game_button_contents">
+                      <span class="game_button_game_icon">
+                        <img  src="images/qwt/a6abc0d0c1e79c0b5b0f5c8ab81ce9076a542414.jpg">
+                      </span>
+                      <span class="game_button_game_name">
+                        PAYDAY 2
+                      </span>
+                    </span>
+                  </a>
+                  <!-- 6 -->
+                  <a href="#" class="game_button">
+                    <span class="game_button_contents">
+                      <span class="game_button_game_icon">
+                        <img  src="images/qwt/93d896e7d7a42ae35c1d77239430e1d90bc82cae.jpg">
+                      </span>
+                      <span class="game_button_game_name">
+			             PLAYERUNKNOWN'S BATTLEGROUNDS		
+                      </span>
+                    </span>
+                  </a>
+                  <!-- 7 -->
+                  <a href="#" class="game_button">
+                    <span class="game_button_contents">
+                      <span class="game_button_game_icon">
+                        <img  src="images/qwt/820be4782639f9c4b64fa3ca7e6c26a95ae4fd1c.jpg">
+                      </span>
+                      <span class="game_button_game_name">
+	                           Rust		   
+                      </span>
+                    </span>
+                  </a>
+                  <!-- 8 -->
+                  <a href="#" class="game_button">
+                    <span class="game_button_contents">
+                      <span class="game_button_game_icon">
+                        <img  src="images/qwt/135dc1ac1cd9763dfc8ad52f4e880d2ac058a36c.jpg">
+                      </span>
+                      <span class="game_button_game_name">
+                             Steam      
+                      </span>
+                    </span>
+                  </a>
+                  <!-- 9 -->
+                  <a href="#" class="game_button">
+                    <span class="game_button_contents">
+                      <span class="game_button_game_icon">
+                        <img  src="images/qwt/e3f595a92552da3d664ad00277fad2107345f743.jpg">
+                      </span>
+                      <span class="game_button_game_name">
+                             Team Fortress2      
+                      </span>
+                    </span>
+                  </a>
+                  <!-- 10 -->
+                  <a href="#" class="game_button">
+                    <span class="game_button_contents">
+                      <span class="game_button_game_icon">
+                        <img  src="images/qwt/e18009fb628b35953826efe47dc3be556b689f4c.jpg">
+                      </span>
+                      <span class="game_button_game_name">
+                             Unturned     
+                      </span>
+                    </span>
+                  </a>
+                  
+                  <div class="market_show_more_games">
+                    <a class="btnv6_grey_black ico_hover btn_small_thin">
+                    <span >显示更多</span>
+                    
+                    </a>
+                  
+                  </div>
+                
+                
+                </div>
+              
+                <div class="moreInfo">
+                  <div class="market_search_sidebar_contents">
+                                                                    阅读<a href="#" class="a_color_1"> 社区市场常见问题</a><br>
+                                                                    加入<a href="#" class="a_color_1">社区市场组</a>参与讨论并查看官方通知        
+                </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+          <div id="sellListings"></div>
+        </div>
+
+      </div>
+      <div class="col-xs-4 "></div>
+    </div>
+  </section>
+  <footer class="well fdf-footer">
+    <div class="container fdf-moren-1">
+      <div class="fdf-link-top"></div>
+      <div class="row">
+        <div class="col-xs-2">
+          <img src="images/fdf/logo_valve_footer.png"  class="fdf-footer-imgweizhi" href="./index.html"/></div>
+        <div class="col-xs-8 fdf-footerzhongjian">
+          <b>Copyright © 2019 www.hjkbz.cn All Rights Reserved 京ICP备08000853号-56
+            <a href="./index.html">后街扛把子之高斯林牛啤</a> 版权所有<br>
+            所有的价格均已包含增值税（如适用）
+          </b>
+        </div>
+        <div class="col-xs-2">
+          <img src="images/fdf/logo_footer.png" class="fdf-footer-imgweizhi" href="index.html"/>
+        </div>
+      </div>
+      <div class="fdf-link-top"></div>
+    </div>
+  </footer>
+</body>
+<script type="text/javascript" src="bootstrap3/jquery.min.js"></script>
+<script type="text/javascript" src="bootstrap3/js/bootstrap.js"></script>
+<script type="text/javascript" src="bootstrap3/js/holder.js"></script>
+<script type="text/javascript" src="bootstrap3/js/html5shiv.min.js"></script>
+<script type="text/javascript"
+  src="bootstrap3/js/css3-mediaqueries.js"></script>
+<script type="text/javascript" src="bootstrap3/js/respond.min.js"></script>
+
+<script type="text/javascript">
+	$("#market_table_header>li").click(function() {
+		$(this).attr("class", "active");
+		$(this).siblings().attr("class", " ");
+	});
+</script>
+</html>

@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Bootstrap Template</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" type="text/css" href="bootstrap3/css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="bootstrap3/font-awesome-4.7.0/css/font-awesome.css"/>
+    <link rel="stylesheet" type="text/css" href="css/fdf-style.css">
+    <link rel="stylesheet" type="text/css" href="css/dwl_登录.css">
+
+</head>
+<body>
+<header>
+    <nav class="navbar navbar-default fdf-daohang"><!--导航条-->
+        <div class="container fdf-moren">
+            <div class="container fdf-moren">
+                <div class="col-xs-2">
+                    <div class="navbar-header fdf-header">
+                        <!--logo部分-->
+                        <a class="navbar-brand" href="./index.html">
+                            <img alt="" src="images/fdf/logo.png">
+                        </a>
+                    </div>
+                </div>
+                <div class="col-xs-10 fdf-moren-3">
+                    <div class="navbar-header fdf-caidan">
+                        <!--菜单栏-->
+                        <ul class="nav navbar-nav" id="fdf-caidanbianhua">
+                            <li><a href="./index.html"><span>主页</span></a></li>
+                            <li><a href="market.html"><span>市场</span></a></li>
+                            <li><a href="#"><span>社区</span></a></li>
+                            <li><a href="news.html"><span>新闻</span></a></li>
+                            <li style="width: 275px;height: 50px"><!--搜索框-->
+                                <form class="navbar-form navbar-left" method="get" action="search2.html">
+                                    <div class="form-group">
+                                        <input type="text" class="form-control fdf-formbackground-color" placeholder="游戏名..." style="color: #2a6496">
+                                    </div>
+                                    <button type="submit" class="btn btn-default fa fa-search" id="fdf-formbackground-color1"></button>
+                                </form></li>
+                            <li><!--用户登录-->
+                                <ul class="nav navbar-nav" id="fdf-caidanbianhua-1">
+                                    <li class="dropdown">
+                                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+                                           aria-expanded="false">个人
+                                            <span class="caret"></span></a>
+                                        <ul class="dropdown-menu" id="fdf-xialacaidan">
+                                            <li><a>未登录</a></li>
+                                            <li><a href="登录.html">登录</a></li>
+                                            <li><a href="index.html">注销</a></li>
+                                            <li><a href="注册.html">注册</a></li>
+                                        </ul>
+                                    </li>
+                                    </li>
+                                </ul></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+</header>
+
+
+<section>
+    <div class="dwl_community_home_body container">
+        <div class="dwl_page_content">
+            <div class="row">
+                <div class="col-xs-8">
+                    <div class="dwl_loginbox">
+                        <div class="row">
+                            <div class="col-xs-6 dwl_loginbox_lift">
+                                <div class="dwl_loginbox_content">
+                                    <h2>登录</h2>
+                                    <p>到现有的 Steam 帐户</p>
+                                    <br>
+                                    <form name="logon" action="#" method="POST" id="login_form" style="display: block;">
+                                        <div class="dwl_login_row">
+                                            <div class="dwl_input_title">Steam 帐户名称</div>
+                                            <input class="dwl_text_input" type="text" name="username" id="input_username" value="">
+                                        </div>
+                                        <div class="dwl_login_row">
+                                            <div class="dwl_input_title">密码</div>
+                                            <input class="dwl_text_input" type="password" name="password" id="input_password" autocomplete="off">
+                                        </div>
+                                        <div class="dwl_login_row">
+                                            <div class="dwl_input_title" title="如果您选中此选项，我们会在今后 30 天内自动为您登录，除非您在帐户菜单中选中“注销”。此功能只适用于启用 Steam 令牌的帐户。">
+                                                <input type="checkbox" name="remember_login" id="remember_login">
+                                                <label for="remember_login">在这台电脑上记住我</label>
+                                            </div>
+                                        </div>
+                                        <div class="dwl_btn_ctn">
+                                            <div id="dwl_login_btn_signin">
+                                                <button type="submit" class="dwl_btnv6_blue_hoverfade">
+                                                    <span>登录</span>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                            <div class="col-xs-6 dwl_loginbox_right">
+                                <div class="dwl_loginbox_content">
+                                    <h2>创建</h2>
+                                    <p>一个新的免费帐户</p>
+                                    <br>
+                                    <p>
+                                        欢迎免费加入及轻松使用。继续创建 Steam 帐户并获取 Steam - 适合 PC 和 Mac 玩家的前沿数字解决方案。						</p>
+                                    <div class="nonresponsive_hidden">
+                                        <br>
+                                        <p>
+                                            <a target="_top" href="https://store.steampowered.com/about">了解更多 Steam 的相关信息</a>
+                                        </p>
+                                    </div>
+                                    <a target="_top" href="#" class="dwl_btnv6_blue_hoverfade dwl_btnv6_blue_hoverfade_join">
+                                        <span>加入 Steam</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-4">
+                    <div class="dwl_card_lolor">
+                        <div class="dwl_rightcol">
+                                <h2>为什么加入 STEAM？</h2>
+                                <ul id="why_list">
+                                    <li>购买和下载完整零售游戏</li>
+                                    <li>加入 Steam 社区</li>
+                                    <li>游戏时与好友聊天</li>
+                                    <li>在任何电脑上都能玩</li>
+                                    <li>安排游戏、比赛或 LAN 聚会</li>
+                                    <li>获取自动游戏更新以及更多！</li>
+                                </ul>
+                                <br>
+                                <img src="images/dwl/why_join_preview.png" width="265" height="176" border="0">
+                                <br><br>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<footer class="well fdf-footer">
+    <div class="container fdf-moren-1">
+        <div class="fdf-link-top"></div>
+        <div class="row">
+            <div class="col-xs-2">
+                <img src="images/fdf/logo_valve_footer.png"  class="fdf-footer-imgweizhi" href="./index.html"/></div>
+            <div class="col-xs-8 fdf-footerzhongjian">
+                <b>Copyright © 2019 www.hjkbz.cn All Rights Reserved 京ICP备08000853号-56
+                    <a href="./index.html">后街扛把子之高斯林牛啤</a> 版权所有<br>
+                    所有的价格均已包含增值税（如适用）
+                </b>
+            </div>
+            <div class="col-xs-2">
+                <img src="images/fdf/logo_footer.png" class="fdf-footer-imgweizhi" href="index.html"/>
+            </div>
+        </div>
+        <div class="fdf-link-top"></div>
+    </div>
+</footer>
+</body>
+<script type="text/javascript" src="bootstrap3/jquery.min.js"></script>
+<script type="text/javascript" src="bootstrap3/js/bootstrap.js"></script>
+<script type="text/javascript" src="bootstrap3/js/holder.js"></script>
+<script type="text/javascript" src="bootstrap3/js/html5shiv.min.js"></script>
+<script type="text/javascript" src="bootstrap3/js/css3-mediaqueries.js"></script>
+<script type="text/javascript" src="bootstrap3/js/respond.min.js"></script>
+<script type="text/javascript">
+    $(".dwl_community_home_tabs_ul li").click(function () {
+        $(this).attr("class","active");
+        $(this).siblings().attr("class",null);
+    })
+    $(".dwl_community_home_sort_buttons a").click(function () {
+        $(this).attr("class","dwl_btn_darkblue_white_innerfade");
+        $(this).siblings().attr("class","dwl_btn_grey_grey_outer_bevel");
+    })
+    $(".dwl_apphub_Card_yirutexiao").click(function () {
+        /*window.location.href="#";*/
+    })
+    $(".dwl_apphub_Card_1").parent().css("padding","0");
+    $(".dwl_apphub_Card_2").parent().css("padding","0");
+    $(".dwl_apphub_Card_3").parent().css("padding","0");
+    $(".dwl_loginbox_content").parent().css({"background-color":"#000","background-color":"rgba(0,0,0,0.2)","height":"382px"});
+    $(".dwl_rightcol").parent().css({"background-color":"#000","background-color":"rgba(0,0,0,0.2)","height":"382px"});
+
+
+</script>
+</html>

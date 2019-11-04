@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>社区论坛</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" type="text/css" href="bootstrap3/css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="bootstrap3/font-awesome-4.7.0/css/font-awesome.css"/>
+    <link rel="stylesheet" type="text/css" href="css/fdf-style.css">
+    <link rel="stylesheet" type="text/css" href="css/dwl_社区.css">
+</head>
+<body>
+<header>
+    <nav class="navbar navbar-default fdf-daohang"><!--导航条-->
+        <div class="container fdf-moren">
+            <div class="container fdf-moren">
+                <div class="col-xs-2">
+                    <div class="navbar-header fdf-header">
+                        <!--logo部分-->
+                        <a class="navbar-brand" href="./index.html">
+                            <img alt="" src="images/fdf/logo.png">
+                        </a>
+                    </div>
+                </div>
+                <div class="col-xs-10 fdf-moren-3">
+                    <div class="navbar-header fdf-caidan">
+                        <!--菜单栏-->
+                        <ul class="nav navbar-nav" id="fdf-caidanbianhua">
+                            <li><a href="./index.html"><span>主页</span></a></li>
+                            <li><a href="market.html"><span>市场</span></a></li>
+                            <li><a href="社区论坛.html"><span>社区</span></a></li>
+                            <li><a href="news.html"><span>新闻</span></a></li>
+                            <li style="width: 275px;height: 50px"><!--搜索框-->
+                                <form class="navbar-form navbar-left" method="get" action="search2.html">
+                                    <div class="form-group">
+                                        <input type="text" class="form-control fdf-formbackground-color" placeholder="游戏名..." style="color: #2a6496">
+                                    </div>
+                                    <button type="submit" class="btn btn-default fa fa-search" id="fdf-formbackground-color1"></button>
+                                </form></li>
+                            <li><!--用户登录-->
+                                <ul class="nav navbar-nav" id="fdf-caidanbianhua-1">
+                                    <li class="dropdown">
+                                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+                                           aria-expanded="false">个人
+                                            <span class="caret"></span></a>
+                                        <ul class="dropdown-menu" id="fdf-xialacaidan">
+                                            <li><a>未登录</a></li>
+                                            <li><a href="登录.html">登录</a></li>
+                                            <li><a href="index.html">注销</a></li>
+                                            <li><a href="注册.html">注册</a></li>
+                                        </ul>
+                                    </li>
+                                    </li>
+                                </ul></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+</header>
+
+
+<section>
+    <div class="dwl-community_home_header container">
+        <div >
+            <h2>社区活动</h2>
+        </div>
+        <div>
+            <h4>Steam 上所有游戏与软件的社区和官方内容。</h4>
+        </div>
+
+        <div class="row dwl_community_home_app_shortcuts">
+            <!--左边的登录之类的-->
+            <div class="col-xs-8">
+                <div class="row">
+                    <div class="col-xs-6 dwl_community_home_app_shortcuts_left">
+                        欢迎来到 Steam 社区
+                        <br><br>
+                        登录 Steam 社区寻找更多的中心来浏览。
+                        <div class="dwl_community_activity_signin_buttons">
+                            <a class="btn btn-default" href="#" role="button"><span>登录</span></a>
+                            <div class="dwl_community_activity_or">或</div>
+                            <a class="btn btn-default" href="#" role="button"><span>加入Steam</span></a>
+                        </div>
+                        <br>
+                        <div class="dwl_community_home_join_steam">首次使用 Steam？
+                            <a href="https://store.steampowered.com/about/">了解更多</a>。
+                        </div>
+                    </div>
+                    <div class="col-xs-6 dwl_community_home_app_shortcuts_right">
+                        <div>热门的中心</div>
+                        <div class="dwl_appHubShortcut">
+                            <a href="#"><img class="dwl_appHubShortcut_Icon" src="images/dwl/16a058f830fbd70d4e40059920c53c6029fcc9ca.jpg"></a>
+                            <div class="dwl_appHubShortcutText">
+                                <a href="#" class="dwl_appHubShortcut_Title">RimWorld</a>
+                                <div class="dwl_new_items_num">
+                                    296 个新创意工坊项目&nbsp;<span class="dwl_new_items_text">本周</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="dwl_appHubShortcut">
+                            <a href="#"><img class="dwl_appHubShortcut_Icon" src="images/dwl/9cc56555b04419785037d36362b71e2854daa69c.jpg"></a>
+                            <div class="dwl_appHubShortcutText">
+                                <a href="#" class="dwl_appHubShortcut_Title">Call of Duty: WWII</a>
+                                <div class="dwl_new_items_num">
+                                    2 幅新艺术作品&nbsp;<span class="dwl_new_items_text">本周</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="dwl_appHubShortcut">
+                            <a href="#"><img class="dwl_appHubShortcut_Icon" src="images/dwl/af5ef05eac8b1eb618e4f57354ac7b3e918ab1bd.jpg"></a>
+                            <div class="dwl_appHubShortcutText">
+                                <a href="#" class="dwl_appHubShortcut_Title">Borderlands: The Pre-Sequel</a>
+                                <div class="dwl_new_items_num">
+                                    1 幅新艺术作品&nbsp;<span class="dwl_new_items_text">本周</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="dwl_appHubShortcut">
+                            <a href="#"><img class="dwl_appHubShortcut_Icon" src="images/dwl/1f2b21f809d9a409460f23d12061c1b18f6d5a74.jpg"></a>
+                            <div class="dwl_appHubShortcutText">
+                                <a href="#" class="dwl_appHubShortcut_Title">Darksiders III</a>
+                                <div class="dwl_new_items_num">
+                                    1 幅新艺术作品&nbsp;<span class="dwl_new_items_text">本周</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--右边的搜索框-->
+            <div class="col-xs-4">
+                <div class="dwl_community_home_shortcut_content">
+                    <!--搜索块-->
+                    <div class="dwl_community_home_search_content">
+                        <div class="dwl_community_home_search_title">查找中心</div>
+                        <div class="dwl_input-group">
+                            <form action="" id="AppHubSearch">
+                                <input type="text" class="dwl_community_home_search_app_input" placeholder="搜索产品" name="searchAppName">
+                                <input type="image" class="dwl_community_home_search_apps_image" src="images/dwl/searchbox_workshop_submit.gif">
+                            </form>
+                        </div>
+                    </div>
+                    <div class="dwl_community_home_search_divider"></div>
+                    <!--搜索块-->
+                    <div class="dwl_community_home_search_content">
+                        <div class="dwl_community_home_search_title">寻找玩家</div>
+                        <div class="dwl_input-group">
+                            <form action="" id="SearchPlayers">
+                                <input type="text" class="dwl_community_home_search_app_input" placeholder="搜索好友" name="searchAppName">
+                                <input type="image" class="dwl_community_home_search_apps_image" src="images/dwl/searchbox_workshop_submit.gif">
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 第一块结束-->
+    <!--标签切换-->
+    <div class="dwl_community_home_tabs container">
+        <ul class="nav nav-tabs dwl_community_home_tabs_ul">
+            <li role="presentation" class="active" id="active_li"><a href="#" class="dwl_community_home_tabs_a" id="active_a1">全部</a></li>
+            <li role="presentation"><a href="#" class="dwl_community_home_tabs_a">截图</a></li>
+            <li role="presentation"><a href="#" class="dwl_community_home_tabs_a">艺术作品</a></li>
+            <li role="presentation"><a href="#" class="dwl_community_home_tabs_a">实况直播</a></li>
+            <li role="presentation"><a href="#" class="dwl_community_home_tabs_a">视频</a></li>
+            <li role="presentation"><a href="#" class="dwl_community_home_tabs_a">创意工坊</a></li>
+            <li role="presentation"><a href="#" class="dwl_community_home_tabs_a">新闻</a></li>
+            <li role="presentation"><a href="#" class="dwl_community_home_tabs_a">指南</a></li>
+            <li role="presentation"><a href="#" class="dwl_community_home_tabs_a">测评</a></li>
+        </ul>
+    </div>
+    <div class="dwl_community_home_sort_options">
+        <div class="dwl_community_home_sort_buttons">
+            正在查看&nbsp;&nbsp;
+            <a class="dwl_btn_darkblue_white_innerfade" href="#"><span>最热门</span></a>
+            <a class="dwl_btn_grey_grey_outer_bevel" href="#"><span>最新</span></a>
+        </div>
+        <div style="clear: right;"></div>
+    </div>
+
+
+    <!--开始块状元素-->
+    <div class="dwl_apphub_Content">
+        <!--第一行-->
+        <div class="dwl_row_1">
+            <div class="row">
+                <div class="col-xs-6">
+                    <div class="dwl_apphub_Card_1 dwl_apphub_Card_yirutexiao">
+                        <div class="dwl_apphub_CardContentType">Dota 2: 指南</div>
+                        <div class="dwl_apphub_CardContentGuideTitle">
+                            <img class="dwl_apphub_CardContentGuideImage" src="images/dwl/saved_resource(1)">
+                            7.22h (核心) 熊德华中单女王
+                        </div>
+                        <div class="dwl_apphub_CardContentGuideDesc">要多刷顺带支援。哪怕出打架装也不要一直打架容易蹦，刷打结合打无解肥，装备选择看局势出，没有什么特定要出的装备。如果有的话那就是A杖。Blink不要乱用。&nbsp;
+                        </div>
+                        <div class="dwl_hot">
+                            <i class="fa fa-star "></i>
+                            <i class="fa fa-star "></i>
+                            <i class="fa fa-star "></i>
+                            <i class="fa fa-star "></i>
+                        </div>
+                        <div class="dwl_apphub_CardContentAuthorBlock">
+                            <div class="dwl_apphub_CardContentAppName"><a href="#">Dota 2</a></div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-xs-6">
+                    <div class="dwl_apphub_Card_1 dwl_apphub_Card_yirutexiao">
+                        <div class="dwl_apphub_CardContentType">Dota 2: 指南</div>
+                        <div class="dwl_apphub_CardContentGuideTitle">
+                            <img class="dwl_apphub_CardContentGuideImage" src="images/dwl/saved_resource">
+                            7.22h (辅助) 阿柴4号位POM的速瓶GANK
+                        </div>
+                        <div class="dwl_apphub_CardContentGuideDesc">POM这种英雄典型的技能厉害 装备成长不高 这个版本输出一般主要打控制补一点功能
+                            游走效率高 非常容易开局3人路拿1血 2符
+                            前期简单恢复装 速瓶控F 保持自己的状态 多树林阴影箭 积累优势后 买个风杖就起宝石控视野
+                            带宝石稳的一批 做好压制不浪就随便赢 &nbsp;
+                        </div>
+                        <div class="dwl_hot">
+                            <i class="fa fa-star "></i>
+                            <i class="fa fa-star "></i>
+                            <i class="fa fa-star "></i>
+                            <i class="fa fa-star "></i>
+                        </div>
+                        <div class="dwl_apphub_CardContentAuthorBlock">
+                            <div class="dwl_apphub_CardContentAppName"><a href="#">Dota 2</a></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--第一行结束-->
+        <div class="dwl_row_2">
+            <div class="row">
+                <div class="col-xs-4">
+                    <div class="dwl_apphub_Card_2 dwl_apphub_Card_yirutexiao">
+                        <div class="dwl_apphub_CardContentType">Dota 2: 指南</div>
+                        <div class="dwl_apphub_CardContentGuideTitle_small">
+                            <img class="dwl_apphub_CardContentGuideImage" src="images/dwl/saved_resource(9)">
+                            7.22h (核心) 正面倒下，背面迎敌
+                        </div>
+                        <div class="dwl_apphub_CardContentGuideDesc">  对线，你不凶他，他便凶你。
+                            无论如何，这个英雄一定要肥。
+
+                            团战，不要低估敌人的围攻，冲入对方深处前冷静考虑一下。
+                            有时候，把对面赶走就行了。
+
+                            可以带线牵制，或偷机会直接上高。
+                        </div>
+                        <div class="dwl_hot">
+                            <i class="fa fa-star "></i>
+                            <i class="fa fa-star "></i>
+                            <i class="fa fa-star "></i>
+                            <i class="fa fa-star "></i>
+                        </div>
+                        <div class="dwl_apphub_CardContentAuthorBlock">
+                            <div class="dwl_apphub_CardContentAppName"><a href="#">Dota 2</a></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-4">
+                    <div class="dwl_apphub_Card_2  dwl_apphub_Card_yirutexiao">
+                        <div class="dwl_apphub_CardContentType">Dota 2: 指南</div>
+                        <div class="dwl_apphub_CardContentGuideTitle_small">
+                            <img class="dwl_apphub_CardContentGuideImage" src="images/dwl/saved_resource">
+                            7.22h (核心) 超级无敌米拉娜
+                        </div>
+                        <div class="dwl_apphub_CardContentGuideDesc">要多刷顺带支援。哪怕出打架装也不要一直打架容易蹦，刷打结合打无解肥，装备选择看局势出，没有什么特定要出的装备。如果有的话那就是A杖。Blink不要乱用。&nbsp;
+                        </div>
+                        <div class="dwl_hot">
+                            <i class="fa fa-star "></i>
+                            <i class="fa fa-star "></i>
+                            <i class="fa fa-star "></i>
+                            <i class="fa fa-star "></i>
+                        </div>
+                        <div class="dwl_apphub_CardContentAuthorBlock">
+                            <div class="dwl_apphub_CardContentAppName"><a href="#">Dota 2</a></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-4">
+                    <div class="dwl_apphub_Card_2 dwl_apphub_Card_yirutexiao">
+                        <div class="dwl_apphub_CardContentType">Dota 2: 指南</div>
+                        <div class="dwl_apphub_CardContentGuideTitle_small">
+                            <img class="dwl_apphub_CardContentGuideImage" src="images/dwl/saved_resource(2)">
+                            7.22h (核心) 7.22h猴子
+                        </div>
+                        <div class="dwl_apphub_CardContentGuideDesc">
+                        </div>
+                        <div class="dwl_hot">
+                            <i class="fa fa-star "></i>
+                            <i class="fa fa-star "></i>
+                            <i class="fa fa-star "></i>
+                            <i class="fa fa-star "></i>
+                        </div>
+                        <div class="dwl_apphub_CardContentAuthorBlock">
+                            <div class="dwl_apphub_CardContentAppName"><a href="#">Dota 2</a></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--第二行结束-->
+        <!--第三行开始-->
+        <div class="dwl_row_3">
+            <div class="row">
+                <div class="col-xs-6">
+                    <div class="dwl_apphub_Card_3 dwl_apphub_Card_yirutexiao">
+                        <div class="dwl_apphub_CardContentMain" style="height: 348px;">
+                            <img class="dwl_apphub_CardContentPlayVideoIcon" src="images/dwl/play_icon80.png">
+                            <img class="dwl_apphub_CardContentPreviewImage" src="images/dwl/0(9).jpg">
+                        </div>
+                        <div class="dwl_apphub_CardMetaData">
+                            <div class="dwl_apphub_CardCommentCount">0</div>
+                            <div class="dwl_apphub_CardRating rateUp">
+                                34		</div>
+                            <div class="dwl_apphub_CardContentTitle ellipsis">Dead or Alive 6 : Sexy Bunny Costume Set&nbsp;</div>
+                            <div class="dwl_apphub_CardContentAuthorBlock_tall">
+                                <div class="dwl_apphub_CardContentAppName"><a href="#">DEAD OR ALIVE 6</a></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-6">
+                    <div class="dwl_apphub_Card_3 dwl_apphub_Card_yirutexiao">
+                        <div class="dwl_apphub_CardContentMain" style="height: 348px;">
+                            <img class="dwl_apphub_CardContentPlayVideoIcon" src="images/dwl/play_icon80.png">
+                            <img class="dwl_apphub_CardContentPreviewImage" src="images/dwl/0(9).jpg">
+                        </div>
+                        <div class="dwl_apphub_CardMetaData">
+                            <div class="dwl_apphub_CardCommentCount">0</div>
+                            <div class="dwl_apphub_CardRating rateUp">
+                                34		</div>
+                            <div class="dwl_apphub_CardContentTitle ellipsis">Dead or Alive 6 : Sexy Bunny Costume Set&nbsp;</div>
+                            <div class="dwl_apphub_CardContentAuthorBlock_tall">
+                                <div class="dwl_apphub_CardContentAppName"><a href="#">DEAD OR ALIVE 6</a></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--第三行结束-->
+        <div class="dwl_row_3">
+            <div class="row">
+                <div class="dwl_apphub_Card_4 dwl_apphub_Card_yirutexiao">
+                    <div class="dwl_apphub_UserReviewCardContent">
+                        <div class="dwl_found_helpful">
+                            有 246 人觉得这篇评测有价值<br>有 59 人觉得这篇评测很欢乐
+                        </div>
+                        <div class="dwl_vote_header">
+                            <div class="dwl_appSmallLogo">
+                                <img src="images/dwl/90eb7e1ff1db3ea28321ed32ebb522cabf12bbda.jpg">
+                            </div>
+                            <div class="dwl_reviewInfo">
+                                <div class="dwl_thumb">
+                                    <img src="images/dwl/icon_thumbsUp.png" width="44" height="44">
+                                </div>
+                                <div class="dwl_title">推荐</div>
+                                <div class="dwl_hours">总时数 12.9 小时</div>
+                            </div>
+                        </div>
+                        <div class="dwl_apphub_CardTextContent">
+                            <div class="dwl_date_posted">发布于：10月11日</div>
+                            《无线电指挥官》一款有效提升你的认知，避免你动不动就口嗨XXX将军是傻逼的游戏。
+                            这个游戏，没有树会说话，不到万不得已不会使用伟氏炮击，也没有动不动就能烧烂整个顺化市的一键打击式燃烧弹，它褪去了“流行式”的越南战争，让一切回到了该有的样子。
+                            虽然是一个RTT游戏，但最大的不同在于虽然一切的战斗都在即时进行，但你只能对着你的地图爬格子，你和千里之外的战场唯一联系起来的东西只有你的无线电，你需要询问，命令你的部队，通过繁杂的无线电联络和对地图上的兵牌的不断修正保持你对战场的正确认知，通过有限的交战情报来了解整个战场的态势，然后在自己的猜测和交战的紧迫条件下做出命令和选择。你终于理解了那些军事史上灵光乍现或者蠢到无可附加的决策，你终于理解了自己不应当随意口嗨，你甚至当不了好好指挥A与B两个步兵排的连长，却天天动不动称呼别人是个傻逼，因为当你拿起无线电，或者犹豫或者慌乱，半天按不出该按的命令或者把命令一改再改的时候，AB排的士兵也会觉得你是个傻逼。
+                        </div>
+                        <div class="dwl_apphub_CardContentAuthorBlock_max">
+                            <div class="dwl_apphub_CardContentAppName"><a href="#">Radio Commander</a></div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<footer class="well fdf-footer">
+    <div class="container fdf-moren-1">
+        <div class="fdf-link-top"></div>
+        <div class="row">
+            <div class="col-xs-2">
+                <img src="images/fdf/logo_valve_footer.png"  class="fdf-footer-imgweizhi" href="./index.html"/></div>
+            <div class="col-xs-8 fdf-footerzhongjian">
+                <b>Copyright © 2019 www.hjkbz.cn All Rights Reserved 京ICP备08000853号-56
+                    <a href="./index.html">后街扛把子之高斯林牛啤</a> 版权所有<br>
+                    所有的价格均已包含增值税（如适用）
+                </b>
+            </div>
+            <div class="col-xs-2">
+                <img src="images/fdf/logo_footer.png" class="fdf-footer-imgweizhi" href="index.html"/>
+            </div>
+        </div>
+        <div class="fdf-link-top"></div>
+    </div>
+</footer>
+</body>
+<script type="text/javascript" src="bootstrap3/jquery.min.js"></script>
+<script type="text/javascript" src="bootstrap3/js/bootstrap.js"></script>
+<script type="text/javascript" src="bootstrap3/js/holder.js"></script>
+<script type="text/javascript" src="bootstrap3/js/html5shiv.min.js"></script>
+<script type="text/javascript" src="bootstrap3/js/css3-mediaqueries.js"></script>
+<script type="text/javascript" src="bootstrap3/js/respond.min.js"></script>
+<script type="text/javascript">
+    $(".dwl_community_home_tabs_ul li").click(function () {
+        $(this).attr("class","active");
+        $(this).siblings().attr("class",null);
+    })
+    $(".dwl_community_home_sort_buttons a").click(function () {
+        $(this).attr("class","dwl_btn_darkblue_white_innerfade");
+        $(this).siblings().attr("class","dwl_btn_grey_grey_outer_bevel");
+    })
+    $(".dwl_apphub_Card_yirutexiao").click(function () {
+//        window.location.href="#";
+        window.open("http://www.tmooc.cn","newwindow","height=400,width=400,top=200,toolbar=no,menu.bar=no,scrollbars=no,resizable=no,location=no,status=no")
+    })
+    $(".dwl_apphub_Card_1").parent().css("padding","0");
+    $(".dwl_apphub_Card_2").parent().css("padding","0");
+    $(".dwl_apphub_Card_3").parent().css("padding","0");
+</script>
+</html>

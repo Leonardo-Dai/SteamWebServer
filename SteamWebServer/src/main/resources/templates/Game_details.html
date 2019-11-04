@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Steam</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" type="text/css" href="bootstrap3/css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="bootstrap3/font-awesome-4.7.0/css/font-awesome.css"/>
+    <link rel="stylesheet" type="text/css" href="css/fdf-style.css">
+    <link rel="stylesheet" type="text/css" href="css/home.css">
+    <script src="js/jquery-1.4.2.js"></script>
+    <link rel="stylesheet" href="css/game_details.css">
+</head>
+<body>
+<!--头部-->
+<header>
+    <nav class="navbar navbar-default fdf-daohang"><!--导航条-->
+        <div class="container fdf-moren">
+            <div class="container fdf-moren">
+                <div class="col-xs-2">
+                    <div class="navbar-header fdf-header">
+                        <!--logo部分-->
+                        <a class="navbar-brand" href="./index.html">
+                            <img alt="" src="images/fdf/logo.png">
+                        </a>
+                    </div>
+                </div>
+                <div class="col-xs-10 fdf-moren-3">
+                    <div class="navbar-header fdf-caidan">
+                        <!--菜单栏-->
+                        <ul class="nav navbar-nav" id="fdf-caidanbianhua">
+                            <li><a href="./index.html"><span>主页</span></a></li>
+                            <li><a href="market.html"><span>市场</span></a></li>
+                            <li><a href="社区论坛.html"><span>社区</span></a></li>
+                            <li><a href="news.html"><span>新闻</span></a></li>
+                            <li style="width: 275px;height: 50px"><!--搜索框-->
+                                <form class="navbar-form navbar-left" method="get" action="search2.html">
+                                    <div class="form-group">
+                                        <input type="text" class="form-control fdf-formbackground-color" placeholder="游戏名..." style="color: #2a6496">
+                                    </div>
+                                    <button type="submit" class="btn btn-default fa fa-search" id="fdf-formbackground-color1"></button>
+                                </form></li>
+                            <li><!--用户登录-->
+                                <ul class="nav navbar-nav" id="fdf-caidanbianhua-1">
+                                    <li class="dropdown">
+                                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+                                           aria-expanded="false">个人
+                                            <span class="caret"></span></a>
+                                        <ul class="dropdown-menu" id="fdf-xialacaidan">
+                                            <li><a>未登录</a></li>
+                                            <li><a href="登录.html">登录</a></li>
+                                            <li><a href="index.html">注销</a></li>
+                                            <li><a href="注册.html">注册</a></li>
+                                        </ul>
+                                    </li>
+                                    </li>
+                                </ul></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+</header>
+<!--中间部分-->
+<section>
+    <div class="container fdf-section">
+        <!--标题部分-->
+            <div class="game-section-1">
+                <div class="col-xs-10">
+                    <span>Cyberpunk 2077</span>
+                </div>
+                <div class="col-xs-2 game-col-2">
+                    <a class="game-btn_blue" href="#">
+                        <span>社区中心</span>
+                    </a>
+                </div>
+            </div>
+        <!--预览部分-->
+            <br>
+            <div class="game-yu">
+                <!--左边-->
+                <div class="col-xs-7 game-yu-left">
+                    <div class="game-bigimg">
+                        <img src="images/fdf/xiangqing/xiangqing-1.jpg" id="game-bigimg">
+                    </div>
+                    <div class="game-highlight_strip">
+                        <div class="game-highlight_strip-1" id="game-xqimg-1">
+                            <img src="images/fdf/xiangqing/xiangqing-1.jpg"/>
+                        </div>
+
+                        <div class="game-highlight_strip-1" id="game-xqimg-2">
+                            <img src="images/fdf/xiangqing/xiangqing-2.jpg"/>
+                        </div>
+
+                        <div class="game-highlight_strip-1" id="game-xqimg-3">
+                            <img src="images/fdf/xiangqing/xiangqing-3.jpg"/>
+                        </div>
+
+                        <div class="game-highlight_strip-1" id="game-xqimg-4">
+                            <img src="images/fdf/xiangqing/xiangqing-4.jpg"/>
+                        </div>
+
+                        <div class="game-highlight_strip-1" id="game-xqimg-5">
+                            <img src="images/fdf/xiangqing/xiangqing-5.jpg"/>
+                        </div>
+
+                    </div>
+                </div>
+                <!--右边-->
+                <div class="col-xs-5 game-yu-right">
+                    <div class="game-glance">
+                        <div class="game-header-img">
+                            <img src="images/fdf/xiangqing/header_schinese.jpg"/>
+                        </div>
+                        <!--文字部分-->
+                        <div class="game_description_snippet">
+                            《赛博朋克 2077》是一款开放世界游戏，故事发生在夜之城，权力更迭和身体改造是这里不变的主题。扮演一名野心勃勃的雇佣兵：V，追寻一种独一无二的植入体——获得永生的关键。自定义角色义体、技能和玩法，探索包罗万象的城市。您做出的选择也将会对剧情和周遭世界产生影响。
+                        </div>
+                        <div class="game_ctn_left">
+                            <div class="game_user">
+                                <div class="game_user_down">
+                                    <div class="game_user_down1">用户评测</div>
+                                    <div class="game_user_down2">无用户评测</div>
+                                </div>
+                                <div style="height: 7px"></div>
+                                <div class="game_user_down">
+                                    <div class="game_user_down1">发行日期</div>
+                                    <div class="game_user_down2">2020年4月16日</div>
+                                </div>
+                                <div style="height: 7px"></div>
+                                <div class="game_user_down">
+                                    <div class="game_user_down1">开发商</div>
+                                    <div class="game_user_down2" style="color: #2f89bc">CD PROJEKT RED</div>
+                                </div>
+                                <div class="game_user_down">
+                                    <div class="game_user_down1">发行商</div>
+                                    <div class="game_user_down2" style="color: #2f89bc">CD PROJEKT RED</div>
+                                </div>
+                                <div>
+                                    <div class="game_user_down" style="height: 20px;margin-top: 4px">该产品的标签定义</div>
+                                    <div class="game-glance_tags">
+                                        <a href="#" class="game-app_tag">赛博朋克</a>
+                                        <a href="#" class="game-app_tag">大师级</a>
+                                        <a href="#" class="game-app_tag">开放世界</a>
+                                        <a href="#" class="game-app_tag">角色扮演</a>
+                                        <a href="#" class="game-app_tag">未来</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        <!--正文部分-->
+        <div class="container fdf-section">
+            <div class="row" style="width: 600px;margin: 0 auto;padding: 0">
+                <div class="game-context">
+                    <h2>关于这款游戏</h2>
+                    <img src="images/fdf/context/ZHS-About-the-Game.png" height="338" width="600"/>
+                    <br>
+                    <br>
+                        《赛博朋克 2077》是一款开放世界动作冒险游戏，故事发生在夜之城。这是一座五光十色的大都会，权力更迭和身体改造是不变的主题。您扮演一名野心勃勃的雇佣兵：V，正在追寻一种独一无二的植入体。只要得到它，就能掌握获得永生的关键。您可以自定义角色的义体、技能和玩法，探索包罗万象的城市。您做出的选择也将会对剧情和周遭的世界产生影响。
+                    <br>
+                    <br>
+                    <img src="images/fdf/context/ZHS-Mercenary-Outlaw.png" height="225" width="600"/>
+                    <br>
+                    <br>
+                        扮演亡命街头的雇佣兵
+                    <br>
+                        化身装备机械强化义体的城市雇佣兵，成为一名赛博朋克，在夜之城的街头谱写属于您的传奇。
+                    <br>
+                    <br>
+                    <img src="images/fdf/context/ZHS-City-of-the-Future.png" height="225" width="600"/>
+                    <br>
+                    <br>
+                    未来都市的街头百态
+                    <br>
+                    进入夜之城的庞大开放世界。在这里，视觉效果、复杂程度和游戏深度都将得到全新的定义。
+                    <br><br>
+                    <img src="images/fdf/context/ZHS-Social-Media.png" height="75" width="600"/>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--底部-->
+<footer class="well fdf-footer">
+    <div class="container fdf-moren-1">
+        <div class="fdf-link-top"></div>
+        <div class="row">
+            <div class="col-xs-2">
+                <img src="images/fdf/logo_valve_footer.png"  class="fdf-footer-imgweizhi" href="./index.html"/></div>
+            <div class="col-xs-8 fdf-footerzhongjian">
+                <b>Copyright © 2019 www.hjkbz.cn All Rights Reserved 京ICP备08000853号-56
+                    <a href="./index.html">后街扛把子之高斯林牛啤</a> 版权所有<br>
+                    所有的价格均已包含增值税（如适用）
+                </b>
+            </div>
+            <div class="col-xs-2">
+                <img src="images/fdf/logo_footer.png" class="fdf-footer-imgweizhi" href="index.html"/>
+            </div>
+        </div>
+        <div class="fdf-link-top"></div>
+    </div>
+</footer>
+</body>
+<script type="text/javascript" src="bootstrap3/jquery.min.js"></script>
+<script type="text/javascript" src="bootstrap3/js/bootstrap.js"></script>
+<script type="text/javascript" src="bootstrap3/js/holder.js"></script>
+<script type="text/javascript" src="bootstrap3/js/html5shiv.min.js"></script>
+<script type="text/javascript" src="bootstrap3/js/css3-mediaqueries.js"></script>
+<script type="text/javascript" src="bootstrap3/js/respond.min.js"></script>
+<script src="js/fdf-js.js"></script>
+<script src="js/game_details.js"></script>
+</html>
